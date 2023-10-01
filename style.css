@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black ;
+    color: white;
+    width: 100%;
+
+}
+
+/* ................................Header.................................... */
+.top {
+    width: 100%;
+    height: 550px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small/dark-background-abstract-with-light-effect-vector.jpg');
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    padding-left: 40px;
+}
+
+.header-h1 {
+    margin-left: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+span {
+    color: lightskyblue;
+}
+
+.header-sec {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.header-sec>a {
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+/* ...........................................Intr0........................... */
+
+.header-sec>a:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: calc(2px);
+}
+
+.intro {
+    margin: 40px;
+    margin-left: 80px;
+}
+
+.intro>h1 {
+    font-size: 40px;
+}
+
+@keyframes slide {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+.intro>h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #e28743;
+    animation-name: slide;
+    animation-duration: 4s;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.contact-button {
+    margin-left: 80px;
+}
+
+.contact-button>button {
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #2aa0c6;
+
+}
+
+.contact-button>button>a {
+    color: white;
+    font-weight: bold;
+}
+
+.my-image>img {
+    border-radius: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.about>h1 {
+    font-size: 40px;
+    color: #2aa0c6;
+}
+
+.about>p {
+    width: 400px;
+    font-size: 22px;
+    line-height: 35px;
+    text-transform: capitalize;
+    word-spacing: 8px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* ..........................................Skills....................................................... */
+.skills-h1 {
+    text-align: center;
+}
+
+.skills-h1>h1 {
+    font-size: 60px;
+    color: #2aa0c6;
+}
+
+.skills-div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.html,
+.css,
+.javascript,
+.bootstrap,
+.react,
+.node,
+.mongo,
+.firebase {
+    border: 2px solid skyblue;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.html>p,
+.css>p,
+.javascript>p,
+.bootstrap>p,
+.react>p,
+.node>p,
+.mongo>p,
+.firebase>p {
+    font-size: 28px;
+    text-align: center;
+}
+
+.react>p,
+.node>p,
+.mongo>p {
+    margin-top: 10px;
+}
+
+.javascript>img,
+.react>img,
+.node>img,
+.mongo>img {
+    margin-top: 25px;
+}
+
+
+
+/* ................................Media Queries In Laptop.........................ma.... */
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+    }
+
+    .header-h1 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .header-sec {
+        margin-top: -15px;
+        padding-left: 0;
+    }
+
+    .header-sec>a {
+        font-weight: bold;
+        margin: 40px;
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .header-sec>a:hover {
+        text-decoration: underline;
+        text-decoration-color: aqua;
+        text-decoration-thickness: calc(2px);
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    .header {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header-h1 {
+        margin-left: 60px;
+    }
+
+    .header-sec {
+        display: none;
+    }
+
+    .center {
+        padding-left: 130px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 321px) {
+
+    .header-sec {
+        display: none;
+    }
+
+    .center {
+        padding-left: 12px;
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .top {
+        width: 100%;
+    }
+
+    .header-sec {
+        display: none;
+    }
+
+    .center {
+        padding-left: 12px;
+        display: block;
+    }
+
+}
