@@ -6,21 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad-Ahmed</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="top">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#form">Contact</a>
+                  </li>
+                
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+    <div class="top" id="top">
+        
     <div class="header">
         <div class="header-h1">
             <h1>Saad Ah<span>med</span></h1>
         </div>
         <div class="header-sec">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Works</a>
-            <a href="#">Contact</a>
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#form">Contact</a>
         </div>
     </div><br><br>
     
@@ -29,7 +67,7 @@
         <h3>Web Developer</h3>
         <br><br>
         
-        <button class="contact-button"><a href="#">Contact</a></button>
+        <button class="contact-button"><a href="#form">Contact</a></button>
     </div>
 
 </div>
@@ -39,7 +77,7 @@
         <div class="my-image">
             <img src="./Images/Saad-removebg-preview.png" width="400px" height="500px" alt="">
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <h1>About</h1>
             <p>I am student of in Saylani Mass IT Training (SMIT), I am passionate about the power of technology to
                 transform our world, Proven Experience Developing Consumer-Focused Websites Using HTML, CSS, PHP And
@@ -47,7 +85,7 @@
         </div>
     </div><br><br>
 
-    <div class="skills-h1">
+    <div class="skills-h1" id="skills">
         <h1>Skills</h1>
     </div>
     <br><br>
@@ -89,11 +127,40 @@
             <p>FireBase</p>
         </div>
     </div>
-    <br><br>
-    <div id="box"></div>
-    
 
+    <div class="contact-form">
+        <form id="form">
+            <div class="form">
+                <h1>Contact</h1>
+                <p>Would you like to work with me?</p>
+                <input type="text" placeholder="Name" name="" id="name">
+                <input type="number" placeholder="Contact-Number" name="" id="contact">
+                <input type="email" placeholder="Email" name="" id="email">
+                <input type="text" placeholder="Enter Your Message" id="message">
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="bottom">
+        <div class="top-link">
+            <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <div class="fonts">
+            
+            <a href="https://www.facebook.com/saad.sohail.7315"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/saad-ahmed-70894b247/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Saadgithubit"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            
+        </div>
+        <div class="line">
+
+        </div>
+    </div>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
