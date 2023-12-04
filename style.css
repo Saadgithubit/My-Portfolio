@@ -116,10 +116,13 @@ a {
 .center {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 .about {
     margin-top: 20px;
+    width: 30%;
 }
 
 .about>h1 {
@@ -128,7 +131,7 @@ a {
 }
 
 .about>p {
-    width: 400px;
+    width: 100%;
     font-size: 22px;
     line-height: 35px;
     text-transform: capitalize;
@@ -379,9 +382,14 @@ form{
         display: none;
     }
 
-    .center {
+    /* .center {
         padding-left: 130px;
         display: block;
+    } */
+
+    .about{
+        width: 100%;
+        padding: 20px;
     }
 }
 
@@ -390,17 +398,26 @@ form{
         display: block !important;
         position: absolute !important;
         top: 2%;
-        right: 0%;
+        right: 2%;
        
+    }
+
+    .nav-ul{
+        width: 50% !important;
+        height: 60% !important;
     }
 
     .header-sec {
         display: none;
     }
 
-    .center {
+    /* .center {
         padding-left: 12px;
         display: block;
+    } */
+    .about{
+        width: 100%;
+        padding: 20px;
     }
 
     form{
@@ -421,8 +438,13 @@ form{
         display: block !important;
         position: absolute !important;
         top: 2%;
-        right: 0%;
+        right: 2%;
        
+    }
+    
+    .nav-ul{
+        width: 50% !important;
+        height: 60% !important;
     }
     
     .top {
@@ -435,11 +457,15 @@ form{
         display: none;
     }
 
-    .center {
+    /* .center {
         padding-left: 12px;
         display: block;
-    }
+    } */
 
+    .about{
+        width: 100%;
+        padding: 20px;
+    }
     
     form{
         width: 100%;
