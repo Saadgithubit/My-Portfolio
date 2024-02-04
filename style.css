@@ -12,19 +12,20 @@ body {
 }
 
 /* ................................Header.................................... */
-.navbar{
+/* .navbar{
     width: 80px;
     background: none !important;
     display: none !important;
-}
+} */
 
 .top {
     width: 100%;
-    height: 550px;
+    height: auto;
+    padding-bottom: 40px;
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small/dark-background-abstract-with-light-effect-vector.jpg');
 }
 
-.header {
+/* .header {
     display: flex;
     padding: 30px;
     padding-left: 40px;
@@ -54,11 +55,12 @@ span {
     margin-left: 50px;
     font-weight: bold;
     cursor: pointer;
-}
+} */
 
 /* ...........................................Intr0........................... */
 
-.header-sec>a:hover {
+.header-sec>a:hover,
+nav a:hover {
     text-decoration: underline;
     text-decoration-color: aqua;
     text-decoration-thickness: calc(2px);
@@ -73,8 +75,25 @@ span {
     font-size: 40px;
 }
 
-
-
+.intro .my-name::before{
+    content: '';
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid white;
+    animation: animate 4s step(12) infinite;
+}
+@keyframes animate{
+    40% , 60%{
+        left: 20%;
+    }
+    100%{
+        left: 0%;
+    }
+}
 .intro>h3 {
     font-size: 30px;
     margin-top: 10px;
@@ -100,15 +119,16 @@ a {
 
 }
 
-.contact-button > a {
+.contact-button>a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-.my-image{
+.my-image {
     margin-top: -10px;
 }
+
 .my-image>img {
     border-radius: 30px;
 }
@@ -199,17 +219,81 @@ a {
 .mongo>img {
     margin-top: 25px;
 }
-.contact-form{
+
+/* .....................................Projects................................................ */
+#projects{
+    border: 1px solid white;
+}
+#projects h1{
+    font-size: 50px;
+    color: #2aa0c6;
+    text-align: center;
+}
+
+.projects-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projects-left{
+    border: 1px solid white;
+    padding: 20px;
+    width: 30%;
+}
+
+.live-btn{
+    width: 130px;
+    padding: 10px;
+    background-color: #2aa0c6;
+    color: white;
+    border-radius: 10px;
+}
+
+.live-btn:hover{
+    background-color: white;
+    color: #2aa0c6; 
+}
+
+.source-code-btn{
+    width: 130px;
+    padding: 10px;
+    background-color: white;
+    color: #2aa0c6;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.source-code-btn:hover{
+    background-color: #2aa0c6;
+    color: white; 
+}
+.project-right{
+    width: 50%;
+    border: 1px solid white;
+}
+
+.project-right img{
+    width: 100%;
+    height: 100%;
+}
+/* .........................................Contact-Form............................................... */
+
+.contact-form {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-form{
+
+form {
     width: 80%;
-        padding: 10px;
+    padding: 10px;
 }
-.form{
+
+.form {
     border: 1px solid white;
     width: 70%;
     padding: 20px;
@@ -219,16 +303,17 @@ form{
     margin: auto;
 }
 
-.form h1{
+.form h1 {
     font-size: 50px;
 }
 
-.form p{
+.form p {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.form input{
+
+.form input {
     width: 80%;
     height: 50px;
     margin: 10px;
@@ -236,14 +321,14 @@ form{
     font-size: 18px;
 }
 
-.form #message{
+.form #message {
     width: 80%;
-    height: 200px;  
+    height: 200px;
     font-size: 18px;
     padding-bottom: 150px;
 }
 
-.form button{
+.form button {
     width: 80%;
     height: 50px;
     font-size: 22px;
@@ -252,12 +337,12 @@ form{
     margin-top: 10px;
 }
 
-.form button:hover{
+.form button:hover {
     background-color: rgb(161, 215, 236);
-    
+
 }
 
-.bottom{
+.bottom {
     width: 100%;
     border: 1px solid white;
     height: 300px;
@@ -267,28 +352,28 @@ form{
     padding: 20px;
 }
 
-.bottom .top-link{
+.bottom .top-link {
     width: 50%;
     display: flex;
     justify-content: center;
     margin: 20px;
     font-size: 50px;
-    
+
 }
 
-.top-link a{
+.top-link a {
     color: white;
     text-decoration: none;
     transition: all ease-in-out 0.2s;
 
 }
 
-.top-link a:hover{
+.top-link a:hover {
     transform: scale(1.2);
 
 }
 
-.bottom .fonts{
+.bottom .fonts {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -302,16 +387,18 @@ form{
     transition: all ease-in-out 0.2s;
 }
 
-.fonts a:hover{
+.fonts a:hover {
     transform: scale(1.3);
     /* position: relative;
     bottom: 10px; */
 }
-.line{
+
+.line {
     border: 1px solid white;
     width: 50%;
     margin-top: 20px;
 }
+
 /* #box{
     width: 50%;
     height: 500px;
@@ -361,12 +448,23 @@ form{
 
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
-    .navbar{
+
+    /* .navbar{
         display: block !important;
         position: absolute !important;
         top: 2%;
         right: 0%;
        
+    } */
+
+    .navbar-div{
+        background-color: rgb(202, 194, 194) !important;
+    }
+    .navbar a {
+        font-size: 18px;
+        font-weight: 400;
+        color: black !important;
+
     }
 
     .header {
@@ -387,22 +485,25 @@ form{
         display: block;
     } */
 
-    .about{
+    .about {
         width: 100%;
         padding: 20px;
     }
 }
 
 @media only screen and (max-width: 425px) and (min-width: 321px) {
-    .navbar{
+    /* .navbar{
         display: block !important;
         position: absolute !important;
         top: 2%;
         right: 2%;
        
+    } */
+    .navbar a {
+        font-size: 18px;
+        font-weight: 400;
     }
-
-    .nav-ul{
+    .nav-ul {
         width: 50% !important;
         height: 60% !important;
     }
@@ -415,38 +516,43 @@ form{
         padding-left: 12px;
         display: block;
     } */
-    .about{
+    .about {
         width: 100%;
         padding: 20px;
     }
 
-    form{
-        width: 100%;
-    }
-    .form{
+    form {
         width: 100%;
     }
 
-    .bottom .top-link , .bottom .fonts{
+    .form {
+        width: 100%;
+    }
+
+    .bottom .top-link,
+    .bottom .fonts {
         width: 100%;
         border: 1px solid white;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .navbar{
+    /* .navbar{
         display: block !important;
         position: absolute !important;
         top: 2%;
         right: 2%;
        
+    } */
+    .navbar a {
+        font-size: 18px;
+        font-weight: 400;
     }
-    
-    .nav-ul{
+    .nav-ul {
         width: 50% !important;
         height: 60% !important;
     }
-    
+
     .top {
         width: 100%;
         height: auto;
@@ -462,19 +568,21 @@ form{
         display: block;
     } */
 
-    .about{
+    .about {
         width: 100%;
         padding: 20px;
     }
-    
-    form{
-        width: 100%;
-    }
-    .form{
+
+    form {
         width: 100%;
     }
 
-    .bottom .top-link , .bottom .fonts{
+    .form {
+        width: 100%;
+    }
+
+    .bottom .top-link,
+    .bottom .fonts {
         width: 100%;
         border: 1px solid white;
     }
