@@ -527,11 +527,7 @@ form {
        
     } */
 
-    .toggle-button {
-        position: absolute;
-        top: 27px;
-        right: 60px;
-    }
+  
 
     .navbar-div {
         background: linear-gradient(to left, #111111, #131514, #141414, #12323F, #12323F, #336774) !important;
@@ -580,6 +576,7 @@ form {
     .projects-left {
         width: 100%;
         border: none;
+        padding: 0;
     }
 
     .project-right {
@@ -611,12 +608,12 @@ form {
        
     } */
 
-    .toggle-button {
-        position: absolute;
-        top: 27px;
-        right: 30px;
-    }
+    .top-name{
+        border: 1px solid white;
+        margin-left: -10px !important;
+        width: 100px;
 
+       }
     .navbar-div {
         background: linear-gradient(to left, #111111, #131514, #141414, #12323F, #12323F, #336774) !important;
     }
@@ -664,8 +661,15 @@ form {
     .projects-left {
         width: 100%;
         border: none;
+        padding: 0;
     }
-
+    .live-btn{
+        width: 100%;
+    }
+    .source-code-btn{
+        width: 100%;
+        margin: 0;
+    }
     .project-right {
         width: 100%;
         padding: 10px;
