@@ -578,7 +578,13 @@ form {
         border: none;
         padding: 0;
     }
-
+    .live-btn{
+        width: 100%;
+    }
+    .source-code-btn{
+        width: 100%;
+        margin: 0;
+    }
     .project-right {
         width: 100%;
         padding: 10px;
