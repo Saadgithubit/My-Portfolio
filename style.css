@@ -68,9 +68,17 @@ nav a:hover {
     text-decoration-thickness: calc(2px);
 }
 
+.intro-section {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
 .intro {
     margin: 40px;
     margin-left: 80px;
+    width: 40%;
 }
 
 .intro>h1 {
@@ -109,29 +117,37 @@ a {
 }
 
 .my-image {
-    margin-top: -10px;
-    padding-top: 30px;
+    margin-top: -20px;
 }
 
 .my-image>img {
     border-radius: 30px;
 }
 
-.center {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.my-image-2 {
+    display: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.my-image-2>img {
+    border-radius: 30px;
 
 }
 
+
 .about {
     margin-top: 20px;
-    width: 30%;
+    margin: auto;
+    width: 80%;
 }
 
 .about>h1 {
     font-size: 40px;
     color: #2aa0c6;
+    text-align: center;
 }
 
 .about>p {
@@ -142,6 +158,7 @@ a {
     word-spacing: 5px;
     text-align: left;
     margin-top: 20px;
+    text-align: left;
 }
 
 /* ..........................................Skills....................................................... */
@@ -206,31 +223,33 @@ a {
 }
 
 /* .....................................Projects................................................ */
-#projects{
-    border: 1px solid white;
+#projects {
+    padding: 10px;
 }
-#projects h1{
+
+#projects h1 {
     font-size: 50px;
     color: #2aa0c6;
     text-align: center;
 }
 
-.projects-div{
+.projects-div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 30px;
     gap: 20px;
 }
 
-.projects-left{
+.projects-left {
     border: 1px solid white;
     padding: 20px;
     width: 30%;
 }
 
-.live-btn{
+.live-btn {
     width: 130px;
     padding: 10px;
     background-color: #2aa0c6;
@@ -238,12 +257,12 @@ a {
     border-radius: 10px;
 }
 
-.live-btn:hover{
+.live-btn:hover {
     background-color: white;
-    color: #2aa0c6; 
+    color: #2aa0c6;
 }
 
-.source-code-btn{
+.source-code-btn {
     width: 130px;
     padding: 10px;
     background-color: white;
@@ -251,19 +270,23 @@ a {
     border-radius: 10px;
     margin-left: 20px;
 }
-.source-code-btn:hover{
+
+.source-code-btn:hover {
     background-color: #2aa0c6;
-    color: white; 
-}
-.project-right{
-    width: 50%;
-    border: 1px solid white;
+    color: white;
 }
 
-.project-right img{
+.project-right {
+    width: 60%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.project-right img {
     width: 100%;
     height: 100%;
 }
+
 /* .........................................Contact-Form............................................... */
 
 .contact-form {
@@ -431,7 +454,6 @@ form {
 
 }
 
-
 @media only screen and (max-width: 768px) and (min-width: 426px) {
 
     /* .navbar{
@@ -442,9 +464,10 @@ form {
        
     } */
 
-    .navbar-div{
-        background: linear-gradient(to left, #111111,#131514,#141414,#12323F,#12323F,#336774) !important;
+    .navbar-div {
+        background: linear-gradient(to left, #111111, #131514, #141414, #12323F, #12323F, #336774) !important;
     }
+
     .navbar a {
         font-size: 18px;
         font-weight: 400;
@@ -467,8 +490,29 @@ form {
         padding-left: 130px;
         display: block;
     } */
+    .my-image {
+        display: none;
+    }
+
+    .my-image-2 {
+        display: block;
+    }
 
     .about {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .projects-div {
+        border: 1px solid white;
+    }
+
+    .projects-left {
+        width: 100%;
+        border: none;
+    }
+
+    .project-right {
         width: 100%;
         padding: 20px;
     }
@@ -483,19 +527,21 @@ form {
        
     } */
 
-    .toggle-button{
+    .toggle-button {
         position: absolute;
         top: 27px;
         right: 60px;
     }
 
-    .navbar-div{
-        background: linear-gradient(to left, #111111,#131514,#141414,#12323F,#12323F,#336774) !important;
+    .navbar-div {
+        background: linear-gradient(to left, #111111, #131514, #141414, #12323F, #12323F, #336774) !important;
     }
+
     .navbar a {
         font-size: 18px;
         font-weight: 400;
     }
+
     .nav-ul {
         width: 50% !important;
         height: 60% !important;
@@ -504,16 +550,41 @@ form {
     .header-sec {
         display: none;
     }
-    .my-image{
+
+    .my-image {
         padding: 0;
     }
+
     /* .center {
         padding-left: 12px;
         display: block;
     } */
+
+    .my-image {
+        display: none;
+    }
+
+    .my-image-2 {
+        display: block;
+    }
+
     .about {
         width: 100%;
         padding: 20px;
+    }
+
+    .projects-div {
+        border: 1px solid white;
+    }
+
+    .projects-left {
+        width: 100%;
+        border: none;
+    }
+
+    .project-right {
+        width: 100%;
+        padding: 10px;
     }
 
     form {
@@ -540,19 +611,21 @@ form {
        
     } */
 
-    .toggle-button{
+    .toggle-button {
         position: absolute;
         top: 27px;
         right: 30px;
     }
 
-    .navbar-div{
-        background: linear-gradient(to left, #111111,#131514,#141414,#12323F,#12323F,#336774) !important;
+    .navbar-div {
+        background: linear-gradient(to left, #111111, #131514, #141414, #12323F, #12323F, #336774) !important;
     }
+
     .navbar a {
         font-size: 18px;
         font-weight: 400;
     }
+
     .nav-ul {
         width: 50% !important;
         height: 60% !important;
@@ -572,14 +645,31 @@ form {
         padding-left: 12px;
         display: block;
     } */
-    .my-image{
-        padding: 0;
+    .my-image {
+        display: none;
     }
+
+    .my-image-2 {
+        display: block;
+    }
+
     .about {
         width: 100%;
         padding: 20px;
     }
+    .projects-div {
+        border: 1px solid white;
+    }
 
+    .projects-left {
+        width: 100%;
+        border: none;
+    }
+
+    .project-right {
+        width: 100%;
+        padding: 10px;
+    }
     form {
         width: 100%;
     }
