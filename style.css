@@ -513,7 +513,9 @@ form {
     .my-image-2 {
         display: block;
     }
-
+    .center {
+        padding: 0;
+    }
     .about {
         width: 100%;
         padding: 20px;
@@ -584,7 +586,9 @@ form {
     .my-image-2 {
         display: block;
     }
-
+    .center {
+        padding: 0;
+    }
     .about {
         width: 100%;
         padding: 20px;
@@ -691,7 +695,9 @@ form {
     .my-image-2 {
         display: block;
     }
-
+    .center {
+        padding: 0;
+    }
     .about {
         width: 100%;
         padding: 20px;
