@@ -11,3 +11,21 @@ function goToMeme(){
 function goToMemeGithub(){
     window.location.href = 'https://github.com/Saadgithubit/Smit-Next-JS-Projects/tree/main/meme-generator'
 }
+
+let xIcon = document.getElementById('x-icon')
+xIcon.className = 'hide'
+let navIcon = document.getElementById('nav-icon')
+let icons = false
+
+function showHide(){
+    icons = !icons
+    console.log(icons);
+    if(icons === true){
+        navIcon.className = 'hide'
+        xIcon.className = ''
+    }
+    else{
+        xIcon.className = 'hide'
+        navIcon.className = ''
+    }
+}
