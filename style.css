@@ -134,6 +134,7 @@ a {
     margin: auto;
     text-align: center;
     padding-top: 30px;
+    text-align: center;
 }
 
 .my-image-2>img {
@@ -249,6 +250,7 @@ a {
 
 .projects-left {
     border: 1px solid white;
+    border-radius: 10px;
     padding: 20px;
     width: 30%;
 }
@@ -308,6 +310,7 @@ form {
 .form {
     border: 1px solid white;
     width: 70%;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -355,10 +358,12 @@ form {
 }
 
 .bottom {
-    width: 100%;
-    border: 1px solid white;
+    width: 95%;
+    margin: auto;
     height: 300px;
     display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -494,6 +499,11 @@ form {
         padding-left: 130px;
         display: block;
     } */
+
+    .intro{
+        margin-left: 50px;
+        width: 60%;
+        }
     .my-image {
         display: none;
     }
@@ -550,6 +560,11 @@ form {
     .header-sec {
         display: none;
     }
+
+    .intro{
+        margin-left: 50px;
+        width: 80%;
+        }
 
     .my-image {
         padding: 0;
@@ -619,8 +634,6 @@ form {
     } */
 
     .top-name{
-        border: 1px solid white;
-        margin-left: -10px !important;
         width: 100px;
 
        }
@@ -647,7 +660,12 @@ form {
     .header-sec {
         display: none;
     }
-
+    .intro{
+        margin-left: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        }
     /* .center {
         padding-left: 12px;
         display: block;
@@ -690,6 +708,7 @@ form {
 
     .form {
         width: 100%;
+        padding: 10px;
     }
 
     .bottom .top-link,
