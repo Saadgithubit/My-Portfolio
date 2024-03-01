@@ -28,8 +28,6 @@ body {
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small/dark-background-abstract-with-light-effect-vector.jpg');
 }
 
-
-
 /* .header {
     display: flex;
     padding: 30px;
@@ -67,8 +65,9 @@ span {
 .header-sec>a:hover,
 nav a:hover {
     text-decoration: underline;
-    text-decoration-color: aqua;
+    text-decoration-color: white;
     text-decoration-thickness: calc(2px);
+    color: skyblue !important;
 }
 
 .intro-section {
