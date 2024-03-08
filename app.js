@@ -12,6 +12,13 @@ function goToMemeGithub(){
     window.location.href = 'https://github.com/Saadgithubit/Smit-Next-JS-Projects/tree/main/meme-generator'
 }
 
+function goToWeather(){
+    window.location.href = 'https://weather-app-sooty-psi-20.vercel.app/'
+}
+function goToWeatherGithub(){
+    window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/weather-app'
+}
+
 let xIcon = document.getElementById('x-icon')
 xIcon.className = 'hide'
 let navIcon = document.getElementById('nav-icon')
