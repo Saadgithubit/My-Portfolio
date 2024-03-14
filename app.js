@@ -13,7 +13,7 @@ function goToMemeGithub(){
 }
 
 function goToWeather(){
-    window.location.href = 'https://weather-app-sooty-psi-20.vercel.app/'
+    window.location.href = 'http://myweather-web.netlify.app'
 }
 function goToWeatherGithub(){
     window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/weather-app'
