@@ -13,7 +13,7 @@ function goToMemeGithub(){
 }
 
 function goToWeather(){
-    window.location.href = 'http://myweather-web.netlify.app'
+    window.location.href = 'https://currentweatherweb.vercel.app/'
 }
 function goToWeatherGithub(){
     window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/weather-app'
