@@ -13,10 +13,16 @@ function goToMemeGithub(){
 }
 
 function goToWeather(){
-    window.location.href = 'https://currentweatherweb.vercel.app/'
+    window.location.href = 'https://currentweatherweb.netlify.app'
 }
 function goToWeatherGithub(){
     window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/weather-app'
+}
+function goToSapphire(){
+    window.location.href = 'https://saphhire.vercel.app/'
+}
+function goToSapphireGithub(){
+    window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/Mernstack-Project'
 }
 
 let xIcon = document.getElementById('x-icon')
