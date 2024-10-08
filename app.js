@@ -25,22 +25,22 @@ function goToSapphireGithub() {
     window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/Mernstack-Project'
 }
 
-var inp = document.getElementById('flexSwitchCheckChecked')
-var inpLabel = document.getElementById('label')
-inpLabel.innerHTML = 'Disable Dark Mode'
-var body = document.getElementById('body')
-body.className = 'darkTheme'
-inp.addEventListener('input', function (e) {
-    var isChecked = e.target.checked
-    if (isChecked === true) {
-        body.className = 'darkTheme'
-        inpLabel.innerHTML = 'Disable Dark Mode'
-    } else {
-        body.className = 'lightTheme'
-        inpLabel.innerHTML = 'Enable Dark Mode'
-    }
-    console.log(isChecked);
-})
+// var inp = document.getElementById('flexSwitchCheckChecked')
+// var inpLabel = document.getElementById('label')
+// inpLabel.innerHTML = 'Disable Dark Mode'
+// var body = document.getElementById('body')
+// body.className = 'darkTheme'
+// inp.addEventListener('input', function (e) {
+//     var isChecked = e.target.checked
+//     if (isChecked === true) {
+//         body.className = 'darkTheme'
+//         inpLabel.innerHTML = 'Disable Dark Mode'
+//     } else {
+//         body.className = 'lightTheme'
+//         inpLabel.innerHTML = 'Enable Dark Mode'
+//     }
+//     console.log(isChecked);
+// })
 
 let xIcon = document.getElementById('x-icon')
 xIcon.className = 'hide'

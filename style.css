@@ -5,18 +5,27 @@
 }
 
 body {
-    color: white !important;
+    color: black !important;
     width: 100%;
-
 }
 
 .darkTheme {
     background-image: url('https://media3.giphy.com/media/xVn3ZmKrKIOLS/200w.gif?cid=6c09b952w9berfeljhpxq8zdyuouj4t268miez9yty7exqni&ep=v1_gifs_search&rid=200w.gif&ct=g');
 }
 
-.lightTheme {
-    background: linear-gradient(#023E84, #D8E0FE, #003780, #6E8EFB, #6E8EFB, #D8E0FE, #4B7FD2, #003780);
-    color: black !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Outfit", sans-serif;
+}
+
+a,
+p,
+li {
+    font-family: "Urbanist", sans-serif;
 }
 
 /* ................................Header.................................... */
@@ -88,16 +97,18 @@ nav a:hover {
     margin: 40px;
     margin-left: 80px;
     width: 40%;
+    color: white;
 }
 
 .intro>h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 
 .intro>h3 {
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 10px;
+    font-weight: bold;
     color: #e28743;
     transform: translateX(0);
 
@@ -111,9 +122,12 @@ a {
 
 .contact-button {
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 190px;
-    height: 70px;
     border-radius: 30px;
+    padding: 2px 0;
     font-size: 20px;
     background-color: #2aa0c6;
 
@@ -139,6 +153,7 @@ a {
 
 .center {
     padding: 30px;
+    background-color: #FCFCFD;
 }
 
 .my-image-2 {
@@ -163,14 +178,15 @@ a {
 }
 
 .about>h1 {
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
     color: #2aa0c6;
     text-align: center;
 }
 
 .about>p {
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
     text-transform: capitalize;
     word-spacing: 5px;
@@ -186,6 +202,7 @@ a {
 
 .skills-h1>h1 {
     font-size: 60px;
+    font-weight: bold;
     color: #2aa0c6;
 }
 
@@ -241,6 +258,7 @@ a {
 
 #projects h1 {
     font-size: 50px;
+    font-weight: bold;
     color: #2aa0c6;
     text-align: center;
 }
@@ -328,6 +346,7 @@ form {
 
 .form h1 {
     font-size: 50px;
+    font-weight: bold;
 }
 
 .form p {
@@ -367,6 +386,7 @@ form {
 }
 
 .bottom {
+    background-color: #0C0C0C;
     width: 100%;
     height: 300px;
     display: flex;
@@ -528,9 +548,11 @@ form {
         width: 100%;
         padding: 20px;
     }
-    .about>p{
+
+    .about>p {
         font-size: 18px;
     }
+
     .projects-div {
         border: 1px solid white;
     }
@@ -605,9 +627,11 @@ form {
         width: 100%;
         padding: 20px;
     }
-    .about>p{
+
+    .about>p {
         font-size: 15px;
     }
+
     .projects-div {
         border: 1px solid white;
     }
@@ -713,9 +737,11 @@ form {
         width: 100%;
         padding: 20px;
     }
-    .about>p{
+
+    .about>p {
         font-size: 15px;
     }
+
     .projects-div {
         border: 1px solid white;
     }
