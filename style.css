@@ -9,10 +9,6 @@ body {
     width: 100%;
 }
 
-.darkTheme {
-    background-image: url('https://media3.giphy.com/media/xVn3ZmKrKIOLS/200w.gif?cid=6c09b952w9berfeljhpxq8zdyuouj4t268miez9yty7exqni&ep=v1_gifs_search&rid=200w.gif&ct=g');
-}
-
 h1,
 h2,
 h3,
@@ -39,6 +35,11 @@ li {
 }
 
 .top {
+    background-image: url('./Images/bgimage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: center;
     width: 100%;
     height: auto;
     padding-bottom: 40px;
@@ -82,8 +83,6 @@ span {
 nav a:hover {
     text-decoration: underline;
     text-decoration-color: white;
-    text-decoration-thickness: calc(2px);
-    color: skyblue !important;
 }
 
 .intro-section {
@@ -101,15 +100,16 @@ nav a:hover {
 }
 
 .intro>h1 {
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 
 .intro>h3 {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 10px;
     font-weight: bold;
-    color: #e28743;
+    color: #0099FF;
     transform: translateX(0);
 
 }
@@ -125,12 +125,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 190px;
-    border-radius: 30px;
-    padding: 2px 0;
+    width: 250px;
+    padding: 5px 0;
     font-size: 20px;
-    background-color: #2aa0c6;
-
+    background: linear-gradient(to bottom, #002078, #000724);
+    color: white;
 }
 
 .contact-button>a {
@@ -145,6 +144,7 @@ a {
 
 .my-image {
     margin-top: -20px;
+
 }
 
 .my-image>img {
@@ -153,7 +153,7 @@ a {
 
 .center {
     padding: 30px;
-    background-color: #FCFCFD;
+    background-color: #F6FAFE;
 }
 
 .my-image-2 {
@@ -187,7 +187,8 @@ a {
 .about>p {
     width: 100%;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 35px;
+    opacity: 0.8;
     text-transform: capitalize;
     word-spacing: 5px;
     text-align: left;
@@ -215,37 +216,52 @@ a {
 }
 
 .skills-div img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    object-fit: contain;
+    aspect-ratio: 1/2;
+    height: 150px;
 }
+
+/* .nextjs>img {
+    width: 120px;
+    height: 120px;
+} */
 
 .html,
 .css,
 .javascript,
+.typescript,
+.material-ui,
 .bootstrap,
 .react,
+.nextjs,
 .node,
 .mongo,
 .firebase {
-    border: 2px solid skyblue;
+    background-color: #FBFBFB;
     border-radius: 10px;
     width: 250px;
-    height: 300px;
+    height: 220px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.html>p,
-.css>p,
-.javascript>p,
-.bootstrap>p,
-.react>p,
-.node>p,
-.mongo>p,
-.firebase>p {
-    font-size: 28px;
+.html>h3,
+.css>h3,
+.javascript>h3,
+.typescript>h3,
+.material-ui>h3,
+.bootstrap>h3,
+.react>h3,
+.nextjs>h3,
+.node>h3,
+.mongo>h3,
+.firebase>h3 {
+    font-size: 25px;
+    color: #000724;
+    opacity: 0.8;
     text-align: center;
 }
 
@@ -254,12 +270,13 @@ a {
 #projects {
     width: 100%;
     padding: 10px;
+    color: #ffffff;
+    background: transparent linear-gradient(180deg, #0C0D22 0%, #0A0E29 16%, #090E34 35%, #08103E 56%, #091349 75%, #04165E 100%) 0% 0% no-repeat padding-box;
 }
 
 #projects h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    color: #2aa0c6;
     text-align: center;
 }
 
@@ -278,6 +295,14 @@ a {
     border-radius: 10px;
     padding: 20px;
     width: 30%;
+}
+
+.projects-left h3 {
+    font-weight: bold;
+}
+
+.projects-left P {
+    font-size: 14px;
 }
 
 .live-btn {
@@ -335,7 +360,9 @@ form {
 }
 
 .form {
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: #F6FAFE;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #F6FAFE;
     width: 70%;
     padding: 20px;
     display: flex;
@@ -374,7 +401,7 @@ form {
     width: 80%;
     height: 50px;
     font-size: 22px;
-    background-color: skyblue;
+    background: linear-gradient(to bottom, #002078, #000724);
     color: white;
     border: none;
     margin-top: 10px;
@@ -386,7 +413,7 @@ form {
 }
 
 .bottom {
-    background-color: #0C0C0C;
+    background: transparent linear-gradient(180deg, #0C0D22 0%, #0A0E29 16%, #090E34 35%, #08103E 56%, #091349 75%, #04165E 100%) 0% 0% no-repeat padding-box;
     width: 100%;
     height: 300px;
     display: flex;
