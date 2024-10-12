@@ -594,7 +594,8 @@ form {
     } */
 
     .top {
-        height: auto;
+        height: auto !important;
+        padding-bottom: 100px;
     }
 
     .navbar-div {
@@ -712,7 +713,8 @@ form {
        
     } */
     .top {
-        height: auto;
+        height: auto !important;
+        padding-bottom: 100px;
     }
 
     .top-name {
