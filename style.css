@@ -35,7 +35,7 @@ li {
 }
 
 .top {
-    background-image: url('./Images/bgimage.png');
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -47,52 +47,20 @@ li {
 }
 
 .nav-div {
-    border: 1px solid black;
     display: flex !important;
+    width: 60%;
     justify-content: space-between !important;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     border: 1px solid black;
-    width: 70%;
-}
+} */
 
 .name {
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
     width: 40%;
 }
-
-/* .header {
-    display: flex;
-    padding: 30px;
-    padding-left: 40px;
-}
-
-.header-h1 {
-    margin-left: 30px;
-    font-size: 25px;
-    color: white;
-}
-
-span {
-    color: lightskyblue;
-}
-
-.header-sec {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-}
-
-.header-sec>a {
-    font-size: 23px;
-    color: white;
-    text-decoration: none;
-    margin: 30px;
-    margin-left: 50px;
-    font-weight: bold;
-    cursor: pointer;
-} */
 
 /* ...........................................Intr0........................... */
 
@@ -104,6 +72,7 @@ nav a:hover {
 
 .intro-section {
     display: flex;
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
     padding: 10px;
@@ -161,11 +130,20 @@ a {
 
 .my-image {
     margin-top: -20px;
+    background-color: rgba(173, 187, 173, 0.986);
+    border-radius: 50%;
+    padding: 20px;
+    border: 10px solid white;
+    width: 400px;
+    height: 400px;
 
 }
 
 .my-image>img {
-    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
 }
 
 .center {
@@ -642,8 +620,17 @@ form {
     }
 
     .intro {
-        margin-left: 50px;
-        width: 80%;
+        width: 100%;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .intro>h1 {
+        font-size: 25px;
+    }
+
+    .intro>h3 {
+        font-size: 30px;
     }
 
     .my-image {
@@ -678,6 +665,10 @@ form {
 
     .projects-div {
         border: 1px solid white;
+    }
+
+    #projects h1 {
+        font-size: 50px;
     }
 
     .projects-left {
