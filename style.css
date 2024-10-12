@@ -75,14 +75,12 @@ nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 50px;
-    border: 1px solid black;
 }
 
 .intro {
     width: 60%;
     padding-left: 180px;
     color: white;
-    border: 1px solid black;
 }
 
 .intro>h1 {
@@ -130,11 +128,10 @@ a {
 
 .image-main-div {
     width: 40%;
-    border: 1px solid black;
 }
 
 .my-image {
-    background-color: rgba(173, 187, 173, 0.986);
+    background: linear-gradient(to right, #040738, #044CBF, skyblue);
     border-radius: 50%;
     padding: 20px;
     border: 10px solid white;
@@ -598,6 +595,11 @@ form {
         padding-bottom: 100px;
     }
 
+    .name {
+        width: auto;
+        padding-left: 10px;
+    }
+
     .navbar-div {
         background-color: rgba(0, 0, 0, 0.274);
     }
@@ -713,13 +715,15 @@ form {
        
     } */
     .top {
+        border: 1px solid black;
         height: auto !important;
         padding-bottom: 100px;
+        background-position: right;
     }
 
-    .top-name {
-        width: 100px;
-
+    .name {
+        width: auto;
+        padding-left: 10px;
     }
 
     .navbar-div {
