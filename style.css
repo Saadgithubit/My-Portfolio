@@ -672,9 +672,26 @@ form {
     .skills-content>img {
         width: 100%;
         height: 100px;
-        padding: 30px !important;
     }
+.html,
+.css,
+.javascript,
+.material-ui,
+.typescript,
+.react,
+.next,
+.node,
+.mysql{
+  padding: 30px !important;
+}
 
+.bootstrap,
+.mongodb {
+    padding: 20px !important;
+}
+.firebase{
+  padding: 15px;
+}
     .skills-content>h3 {
         font-size: 18px;
     }
@@ -820,9 +837,26 @@ form {
     .skills-content>img {
         width: 100%;
         height: 100px;
-        padding: 30px !important;
     }
+.html,
+.css,
+.javascript,
+.material-ui,
+.typescript,
+.react,
+.next,
+.node,
+.mysql{
+  padding: 30px !important;
+}
 
+.bootstrap,
+.mongodb {
+    padding: 20px !important;
+}
+.firebase{
+  padding: 15px;
+}
     .skills-content>h3 {
         font-size: 16px;
     }
