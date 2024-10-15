@@ -79,7 +79,8 @@ nav a:hover {
 
 .intro {
     width: 60%;
-    padding-left: 180px;
+    padding-left: 280px;
+    padding-top: 100px;
     color: white;
 }
 
@@ -127,6 +128,7 @@ a {
 
 .image-main-div {
     width: 40%;
+    height: 500px;
 }
 
 .my-image {
@@ -134,8 +136,8 @@ a {
     border-radius: 50%;
     padding: 20px;
     border: 10px solid white;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
 
 }
 
@@ -457,12 +459,32 @@ form {
     background: 
     linear-gradient(to right bottom,red,blue,green,gray,salmon);
 } */
+@media only screen and (max-width: 1440px) {
+    .intro {
+        padding-left: 200px;
+    }
+
+}
 
 /* ................................Media Queries In Laptop.........................ma.... */
 
 @media only screen and (max-width: 1024px) {
     body {
         width: 100%;
+    }
+
+    .intro {
+        width: 50%;
+        padding: 100px 0 0 20px;
+    }
+
+    .image-main-div {
+        padding-top: 80px;
+    }
+
+    .my-image {
+        width: 400px;
+        height: 400px;
     }
 
     .header {
@@ -494,6 +516,9 @@ form {
         text-decoration-thickness: calc(2px);
     }
 
+    .form {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
@@ -505,6 +530,10 @@ form {
         right: 0%;
        
     } */
+    .top {
+        height: auto !important;
+        padding-bottom: 100px;
+    }
 
     .navbar-div {
         background-color: rgba(0, 0, 0, 0.274);
@@ -535,13 +564,15 @@ form {
 
     .intro {
         margin: 0;
-        padding-left: 0;
+        padding: 0;
         text-align: center;
         width: 100%;
     }
 
     .image-main-div {
         width: 100%;
+        padding: 0;
+        height: auto;
         margin-top: 80px;
         display: flex;
         justify-content: center;
@@ -580,6 +611,14 @@ form {
     .project-right {
         width: 100%;
         padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
     }
 }
 
@@ -622,7 +661,7 @@ form {
 
     .intro {
         width: 100%;
-        padding-left: 40px;
+        padding: 0 0 0 40px;
     }
 
     .intro>h1 {
@@ -639,15 +678,17 @@ form {
     }
 
     .image-main-div {
+        padding-top: 0;
         margin-top: 80px;
         width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
     }
 
     .my-image {
         width: 80%;
-        height: 320px;
+        height: 330px;
     }
 
     .center {
@@ -673,25 +714,28 @@ form {
         width: 100%;
         height: 100px;
     }
-.html,
-.css,
-.javascript,
-.material-ui,
-.typescript,
-.react,
-.next,
-.node,
-.mysql{
-  padding: 30px !important;
-}
 
-.bootstrap,
-.mongodb {
-    padding: 20px !important;
-}
-.firebase{
-  padding: 15px;
-}
+    .html,
+    .css,
+    .javascript,
+    .material-ui,
+    .typescript,
+    .react,
+    .next,
+    .node,
+    .mysql {
+        padding: 30px !important;
+    }
+
+    .bootstrap,
+    .mongodb {
+        padding: 20px !important;
+    }
+
+    .firebase {
+        padding: 15px;
+    }
+
     .skills-content>h3 {
         font-size: 18px;
     }
@@ -732,6 +776,18 @@ form {
 
     .form {
         width: 100%;
+    }
+
+    .form input {
+        width: 90%;
+    }
+
+    .form #message {
+        width: 90%;
+    }
+
+    .form button {
+        width: 90%;
     }
 
     .bottom .top-link,
@@ -777,9 +833,10 @@ form {
     }
 
     .top {
+        background-position: left;
         width: 100%;
         height: auto;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
     }
 
     .header-sec {
@@ -788,7 +845,7 @@ form {
 
     .intro {
         width: 100%;
-        padding-left: 20px;
+        padding: 0 0 0 40px;
     }
 
     .intro>h1 {
@@ -804,7 +861,9 @@ form {
     }
 
     .image-main-div {
+        padding-top: 0;
         width: 100%;
+        height: auto;
         margin-top: 80px;
         display: flex;
         justify-content: center;
@@ -838,31 +897,38 @@ form {
         width: 100%;
         height: 100px;
     }
-.html,
-.css,
-.javascript,
-.material-ui,
-.typescript,
-.react,
-.next,
-.node,
-.mysql{
-  padding: 30px !important;
-}
 
-.bootstrap,
-.mongodb {
-    padding: 20px !important;
-}
-.firebase{
-  padding: 15px;
-}
+    .html,
+    .css,
+    .javascript,
+    .material-ui,
+    .typescript,
+    .react,
+    .next,
+    .node,
+    .mysql {
+        padding: 30px !important;
+    }
+
+    .bootstrap,
+    .mongodb {
+        padding: 20px !important;
+    }
+
+    .firebase {
+        padding: 15px;
+    }
+
     .skills-content>h3 {
         font-size: 16px;
     }
 
     .projects-div {
         border: 1px solid white;
+    }
+
+    #projects h1 {
+        font-size: 50px;
     }
 
     .projects-left {
@@ -900,6 +966,18 @@ form {
     .form {
         width: 100%;
         padding: 10px;
+    }
+
+    .form input {
+        width: 90%;
+    }
+
+    .form #message {
+        width: 90%;
+    }
+
+    .form button {
+        width: 90%;
     }
 
     .bottom .top-link,
