@@ -203,15 +203,15 @@
         </div>
     </div>
     <div class="contact-form" data-aos="fade-up">
-        <form id="form">
+        <form id="form" onsubmit="receiveEmail(event)">
             <div class="form">
                 <h1>Contact</h1>
                 <p>Would you like to work with me?</p>
-                <input type="text" placeholder="Name" name="" id="name">
-                <input type="number" placeholder="Contact-Number" name="" id="contact">
-                <input type="email" placeholder="Email" name="" id="email">
-                <input type="text" placeholder="Enter Your Message" id="message">
-                <button>Send</button>
+                <input type="text" placeholder="Name" name="name" id="name">
+                <input type="number" placeholder="Contact-Number" name="number" id="contact">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <input type="text" placeholder="Enter Your Message" name="message" id="message">
+                <button type="submit">Send</button>
             </div>
         </form>
     </div>

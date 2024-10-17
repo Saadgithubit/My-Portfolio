@@ -25,23 +25,6 @@ function goToSapphireGithub() {
     window.location.href = 'https://github.com/Saadgithubit/Smit-react-Assignments/tree/main/Mernstack-Project'
 }
 
-// var inp = document.getElementById('flexSwitchCheckChecked')
-// var inpLabel = document.getElementById('label')
-// inpLabel.innerHTML = 'Disable Dark Mode'
-// var body = document.getElementById('body')
-// body.className = 'darkTheme'
-// inp.addEventListener('input', function (e) {
-//     var isChecked = e.target.checked
-//     if (isChecked === true) {
-//         body.className = 'darkTheme'
-//         inpLabel.innerHTML = 'Disable Dark Mode'
-//     } else {
-//         body.className = 'lightTheme'
-//         inpLabel.innerHTML = 'Enable Dark Mode'
-//     }
-//     console.log(isChecked);
-// })
-
 let xIcon = document.getElementById('x-icon')
 xIcon.className = 'hide'
 let navIcon = document.getElementById('nav-icon')
@@ -58,4 +41,29 @@ function showHide() {
         xIcon.className = 'hide'
         navIcon.className = ''
     }
+}
+
+const receiveEmail = async (event) => {
+    event.preventDefault()
+    const formData = new FormData(event.target)
+    const data = Object.fromEntries(formData.entries())
+    const { name, number, email, message } = data
+    if (!name && !number && !email && !message) {
+        alert('Please Fill Required Fields')
+        return
+    }
+    alert('Button Is Clicked')
+    // try {
+    //     const response = await fetch('http://localhost:3002/sendemail', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify({ data }),
+    //     })
+    //     const res = await response.json()
+    //     console.log(res);
+
+    // } catch (error) {
+    //     console.error('Error submitting form:', error);
+
+    // }
 }
