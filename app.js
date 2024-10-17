@@ -61,7 +61,8 @@ const receiveEmail = async (event) => {
             body: JSON.stringify({ data }),
         })
         const res = await response.json()
-        console.log(res);
+        console.log(res)
+            alert('Your Message Is Send')
 
     } catch (error) {
         console.error('Error submitting form:', error);
