@@ -1,4 +1,3 @@
-const { API_URL } = require("./config/environment")
 
 function goToOlx() {
     window.location.href = 'https://olx-clone-ebon.vercel.app/'
@@ -56,7 +55,7 @@ const receiveEmail = async (event) => {
     }
     // alert('Button Is Clicked')
     try {
-        const response = await fetch(`${API_URL}/sendemail/post`, {
+        const response = await fetch(`$https://saadahmedportfolio.netlify.app/sendemail/post`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ data }),
