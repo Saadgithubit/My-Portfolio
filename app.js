@@ -1,3 +1,5 @@
+const { API_URL } = require("./config/environment")
+
 function goToOlx() {
     window.location.href = 'https://olx-clone-ebon.vercel.app/'
 }
@@ -52,18 +54,18 @@ const receiveEmail = async (event) => {
         alert('Please Fill Required Fields')
         return
     }
-    alert('Button Is Clicked')
-    // try {
-    //     const response = await fetch('http://localhost:3002/sendemail', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify({ data }),
-    //     })
-    //     const res = await response.json()
-    //     console.log(res);
+    // alert('Button Is Clicked')
+    try {
+        const response = await fetch(`${API_URL}/sendemail/post`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data }),
+        })
+        const res = await response.json()
+        console.log(res);
 
-    // } catch (error) {
-    //     console.error('Error submitting form:', error);
+    } catch (error) {
+        console.error('Error submitting form:', error);
 
-    // }
+    }
 }

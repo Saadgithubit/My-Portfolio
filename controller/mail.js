@@ -1,40 +1,39 @@
 const nodemailer = require("nodemailer");
-const express = require("express")
+const express = require("express");
+const { HOST, NODE_PASS, NODE_EMAIL, MY_EMAIL } = require("../config/environment");
 
 const router = express.Router()
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
+    host: HOST,
     port: 587,
     auth: {
-        user: 'chaya4@ethereal.email',
-        pass: 'V21NU8EMhf5F2cgFcn'
+        user: NODE_EMAIL,
+        pass: NODE_PASS
     }
 });
 
-// router.post('/', async (req, res) => {
-//     try {
-//         res.send({ message: 'Email Receive successfully' })
-//     } catch (e) {
-//         res.send({ message: e.message })
-//     }
-// })
+router.get('/', async (req, res) => {
+    res.send({ message: 'Email Routes' })
+})
 
-const sendemail = async (req, res) => {
-    const { data } = await req.json()
+router.post('/post', async (req, res) => {
+    const { data } = await req.body
     console.log(data);
+    console.log(process.env.NODE_HOST);
 
-    // const { name, number, email, message } = req.data
-    // console.log(req.data);
+    try {
+        const info = await transporter.sendMail({
+            from: `${data.name} <${data.email}>`, // sender address
+            to: MY_EMAIL, // list of receivers
+            subject: data.name, // Subject line
+            text: data.message, // plain text body
+            html: "<b>Hello world?</b>", // html body
+        });
+        res.send({ message: 'Email Receive successfully', })
+    } catch (e) {
+        res.send({ message: e.message })
+    }
+})
 
-    // const info = await transporter.sendMail({
-    //     from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
-    //     to: "bar@example.com, baz@example.com", // list of receivers
-    //     subject: "Hello ✔", // Subject line
-    //     text: "Hello world?", // plain text body
-    //     html: "<b>Hello world?</b>", // html body
-    // });
-    res.send({ message: 'success', data: data })
-};
-
-module.exports = sendemail
+module.exports = router

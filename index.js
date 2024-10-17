@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
-const sendemail = require('./controller/mail.js')
+const mailroutes = require('./controller/mail.js');
+const { PORT } = require('./config/environment.js');
 
 const app = express();
-const port = process.env.PORT || 3002;
+const port = PORT || 3002;
 
 app.use(express.json());
 
@@ -13,11 +14,12 @@ app.listen(port, () => {
 
 app.use(express.static(path.join(__dirname, '/')));
 
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.post('/sendemail', sendemail)
+app.use('/sendemail', mailroutes)
 
 app.get("/message", (req, res) => {
     res.send({ message: "Hello from server!" });
