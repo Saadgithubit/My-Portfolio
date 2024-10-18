@@ -55,7 +55,7 @@ const receiveEmail = async (event) => {
     }
     // alert('Button Is Clicked')
     try {
-        const response = await fetch(`http://saadahmedportfolio.netlify.app/sendemail/post`, {
+        const response = await fetch(`https://saadahmedportfolio.netlify.app/sendemail/post`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ data }),
