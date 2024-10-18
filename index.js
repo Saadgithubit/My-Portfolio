@@ -12,11 +12,11 @@ app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
 
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/src')));
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, '/src/index.html'));
 });
 
 app.use('/sendemail', mailroutes)
