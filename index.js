@@ -21,7 +21,4 @@ app.get('/', (req, res) => {
 
 app.use('/sendemail', mailroutes)
 
-app.get("/message", (req, res) => {
-    res.send({ message: "Hello from server!" });
-});
 

@@ -55,14 +55,14 @@ const receiveEmail = async (event) => {
     }
     // alert('Button Is Clicked')
     try {
-        const response = await fetch(`$https://saadahmedportfolio.netlify.app/sendemail/post`, {
+        const response = await fetch(`http://saadahmedportfolio.netlify.app/sendemail/post`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ data }),
         })
         const res = await response.json()
         console.log(res)
-            alert('Your Message Is Send')
+        alert('Your Message Is Send')
 
     } catch (error) {
         console.error('Error submitting form:', error);
