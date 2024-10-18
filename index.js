@@ -1,11 +1,14 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
+
 const mailroutes = require('./controller/mail.js');
 const { PORT } = require('./config/environment.js');
 
 const app = express();
 const port = PORT || 3002;
 
+app.use(cors());
 app.use(express.json());
 
 app.listen(port, () => {
