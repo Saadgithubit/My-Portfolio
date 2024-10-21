@@ -1,4 +1,3 @@
-
 function goToOlx() {
     window.location.href = 'https://olx-clone-ebon.vercel.app/'
 }
@@ -53,30 +52,21 @@ const receiveEmail = async (event) => {
         alert('Please Fill Required Fields')
         return
     }
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "saad45257@gmail.com",
-        Password: "99E61074D0FAE451EEAFAA0FF363D5CE0DD3",
-        To: 'saad4525789@gmail.com',
-        From: email,
-        Subject: 'Your PortFolio contact form',
-        Body: `Name:${name} <br> Contact No: ${number} <br> Message: ${message}`
-    }).then(
-        message => alert(message)
-    );
-    // alert('Button Is Clicked')
-    // try {
-    //     const response = await fetch(`https://saadahmedportfolio.netlify.app/sendemail/post`, {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify({ data }),
-    //     })
-    //     const res = await response.json()
-    //     console.log(res)
-    //     alert('Your Message Is Send')
+    try {
+        const response = await Email.send({
+            Host: "smtp.elasticemail.com",
+            Port: 2525,
+            Username: 'saad45257@gmail.com',
+            Password: "4AECA7B1137F1EE16DEC0B90BB37B96FF4FE",
+            To: 'saad45257@gmail.com',
+            From: 'saad4525789@gmail.com',
+            Subject: 'Your Portfolio Contact Form',
+            Body: `Name:${name} <br> Email:${email} <br> Contact No: ${number} <br> Message: ${message}`
+        });
+        alert('Email sent successfully!');
+    } catch (error) {
+        console.error('Error sending email:', error);
+        alert(`Failed to send email: ${error.message || error}`);
+    }
 
-    // } catch (error) {
-    //     console.error('Error submitting form:', error);
-
-    // }
 }
